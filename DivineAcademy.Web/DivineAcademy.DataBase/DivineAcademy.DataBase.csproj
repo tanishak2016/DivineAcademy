@@ -58,6 +58,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\DivineDBContext.cs" />
+    <Compile Include="Migrations\202203120858589_Initial.cs" />
+    <Compile Include="Migrations\202203120858589_Initial.designer.cs">
+      <DependentUpon>202203120858589_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,6 +74,11 @@
       <Project>{38ac896d-6b1e-4023-bc3a-83d87af70677}</Project>
       <Name>DivineAcademy.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202203120858589_Initial.resx">
+      <DependentUpon>202203120858589_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

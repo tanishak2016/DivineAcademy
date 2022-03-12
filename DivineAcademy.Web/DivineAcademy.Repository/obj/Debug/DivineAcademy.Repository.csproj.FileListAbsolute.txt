@@ -1,0 +1,15 @@
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\DivineAcademy.Repository.dll.config
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\DivineAcademy.Repository.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\DivineAcademy.Repository.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\DivineAcademy.Model.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\EntityFramework.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\EntityFramework.SqlServer.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\DivineAcademy.Model.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\DivineAcademy.Model.dll.config
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\EntityFramework.xml
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\EntityFramework.SqlServer.xml
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\obj\Debug\DivineAcademy.Repository.csproj.AssemblyReference.cache
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\obj\Debug\DivineAcademy.Repository.csproj.CoreCompileInputs.cache
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\obj\Debug\DivineAcademy.Repository.csproj.CopyComplete
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\obj\Debug\DivineAcademy.Repository.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\obj\Debug\DivineAcademy.Repository.pdb

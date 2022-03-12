@@ -48,11 +48,18 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.3\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -121,15 +128,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.AspNet.Identity.Core">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.Owin">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.3\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
@@ -206,35 +204,12 @@
     <Content Include="Content\img\about.jpg" />
     <Content Include="Content\img\avatar.png" />
     <Content Include="Content\img\bg_direction_nav.png" />
-    <Content Include="Content\img\client1.png" />
-    <Content Include="Content\img\client2.png" />
-    <Content Include="Content\img\client3.png" />
-    <Content Include="Content\img\dev1.png" />
     <Content Include="Content\img\divine-logo.jpg" />
-    <Content Include="Content\img\glyphicons-halflings-white.png" />
-    <Content Include="Content\img\glyphicons-halflings.png" />
-    <Content Include="Content\img\img1.png" />
     <Content Include="Content\img\login.png" />
     <Content Include="Content\img\logo.png" />
-    <Content Include="Content\img\nivo-bullets.png" />
-    <Content Include="Content\img\service1.jpg" />
-    <Content Include="Content\img\service2.jpg" />
-    <Content Include="Content\img\service3.jpg" />
     <Content Include="Content\img\signup.png" />
     <Content Include="Content\img\slides\1.jpg" />
     <Content Include="Content\img\slides\2.jpg" />
-    <Content Include="Content\img\team1.jpg" />
-    <Content Include="Content\img\team2.jpg" />
-    <Content Include="Content\img\team3.jpg" />
-    <Content Include="Content\img\team4.jpg" />
-    <Content Include="Content\img\works\1.jpg" />
-    <Content Include="Content\img\works\2.jpg" />
-    <Content Include="Content\img\works\3.jpg" />
-    <Content Include="Content\img\works\4.jpg" />
-    <Content Include="Content\img\works\5.jpg" />
-    <Content Include="Content\img\works\6.jpg" />
-    <Content Include="Content\img\works\7.jpg" />
-    <Content Include="Content\img\works\8.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

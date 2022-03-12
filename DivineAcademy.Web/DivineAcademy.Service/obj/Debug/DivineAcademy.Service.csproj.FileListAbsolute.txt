@@ -1,0 +1,6 @@
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Service\bin\Debug\DivineAcademy.Service.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Service\bin\Debug\DivineAcademy.Service.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Service\obj\Debug\DivineAcademy.Service.csproj.AssemblyReference.cache
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Service\obj\Debug\DivineAcademy.Service.csproj.CoreCompileInputs.cache
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Service\obj\Debug\DivineAcademy.Service.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Service\obj\Debug\DivineAcademy.Service.pdb

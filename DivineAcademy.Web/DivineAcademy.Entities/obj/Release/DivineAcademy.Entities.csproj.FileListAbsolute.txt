@@ -1,0 +1,16 @@
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\DivineAcademy.Entities.dll.config
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\DivineAcademy.Entities.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\DivineAcademy.Entities.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\EntityFramework.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\EntityFramework.SqlServer.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\Microsoft.AspNet.Identity.Core.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\EntityFramework.xml
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\EntityFramework.SqlServer.xml
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\Microsoft.AspNet.Identity.Core.xml
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\obj\Release\DivineAcademy.Entities.csproj.AssemblyReference.cache
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\obj\Release\DivineAcademy.Entities.csproj.CoreCompileInputs.cache
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\obj\Release\DivineAcademy.Entities.csproj.CopyComplete
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\obj\Release\DivineAcademy.Entities.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\obj\Release\DivineAcademy.Entities.pdb

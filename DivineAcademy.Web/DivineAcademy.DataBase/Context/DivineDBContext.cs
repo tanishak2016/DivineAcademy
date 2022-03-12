@@ -11,7 +11,7 @@ namespace DivineAcademy.DataBase.Context
 {
   public  class DivineDBContext: IdentityDbContext<ApplicationUser>
     {
-        public DivineDBContext():base("DefaultConnection")
+        public DivineDBContext():base("myconnection")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }

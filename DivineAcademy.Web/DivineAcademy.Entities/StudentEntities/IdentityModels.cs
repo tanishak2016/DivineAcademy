@@ -20,15 +20,15 @@ namespace DivineAcademy.Entities.StudentEntities
         }
 
 
-        //[Required]
-        //public String FullName { get; set; } = string.Empty;
+        [Required]
+        public String FullName { get; set; } = string.Empty;
 
-        //[Required]
-        //public String Address { get; set; } = string.Empty;
+        [Required]
+        public String Address { get; set; } = string.Empty;
 
-        //public String DateCeated { get; set; }
+        public String DateCeated { get; set; }
 
-        //public String DateModified { get; set; }
+        public String DateModified { get; set; }
 
 
 
@@ -39,7 +39,7 @@ namespace DivineAcademy.Entities.StudentEntities
     //public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     //{
     //    public ApplicationDbContext()
-    //        : base("DefaultConnection", throwIfV1Schema: false)
+    //        : base("myconnection", throwIfV1Schema: false)
     //    {
     //    }
 

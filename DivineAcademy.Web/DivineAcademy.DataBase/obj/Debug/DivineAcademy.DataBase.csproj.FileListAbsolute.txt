@@ -13,6 +13,8 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\bin\Debug\EntityFramew
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.csproj.AssemblyReference.cache
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.Migrations.Initial.resources
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.csproj.GenerateResource.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.csproj.CoreCompileInputs.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.csproj.CopyComplete
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.dll
