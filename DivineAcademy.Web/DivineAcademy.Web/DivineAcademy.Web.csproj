@@ -168,6 +168,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Student\Controllers\StudentDashBoardController.cs" />
     <Compile Include="Areas\Student\StudentAreaRegistration.cs" />
     <Compile Include="Areas\Student\Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -205,11 +206,14 @@
     <Content Include="Content\img\avatar.png" />
     <Content Include="Content\img\bg_direction_nav.png" />
     <Content Include="Content\img\divine-logo.jpg" />
+    <Content Include="Content\img\draw2.svg" />
+    <Content Include="Content\img\error-404-monochrome.svg" />
     <Content Include="Content\img\login.png" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\signup.png" />
     <Content Include="Content\img\slides\1.jpg" />
     <Content Include="Content\img\slides\2.jpg" />
+    <Content Include="Content\studentDashboardCSS\styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -226,6 +230,8 @@
     <Content Include="Areas\Student\Views\web.config" />
     <Content Include="Areas\Student\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Student\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Student\Views\Shared\_StudentDashboard.cshtml" />
+    <Content Include="Areas\Student\Views\StudentDashBoard\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -257,6 +263,12 @@
     <Content Include="Scripts\js\quicksand\setting.js" />
     <Content Include="Scripts\js\site.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\studentDashboardJS\datatables-simple-demo.js" />
+    <Content Include="Scripts\studentDashboardJS\demo\chart-area-demo.js" />
+    <Content Include="Scripts\studentDashboardJS\demo\chart-bar-demo.js" />
+    <Content Include="Scripts\studentDashboardJS\demo\chart-pie-demo.js" />
+    <Content Include="Scripts\studentDashboardJS\demo\datatables-demo.js" />
+    <Content Include="Scripts\studentDashboardJS\scripts.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

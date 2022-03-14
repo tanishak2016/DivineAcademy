@@ -5,8 +5,8 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Debug\EntityFramework
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Debug\EntityFramework.SqlServer.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Debug\EntityFramework.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Debug\EntityFramework.SqlServer.xml
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\obj\Debug\DivineAcademy.Model.csproj.AssemblyReference.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\obj\Debug\DivineAcademy.Model.csproj.CoreCompileInputs.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\obj\Debug\DivineAcademy.Model.csproj.CopyComplete
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\obj\Debug\DivineAcademy.Model.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\obj\Debug\DivineAcademy.Model.pdb
-G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\obj\Debug\DivineAcademy.Model.csproj.AssemblyReference.cache

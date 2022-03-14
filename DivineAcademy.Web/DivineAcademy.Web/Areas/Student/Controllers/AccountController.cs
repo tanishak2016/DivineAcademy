@@ -80,7 +80,8 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
+                    // return RedirectToLocal(returnUrl);
+                    return RedirectToAction("Index", "StudentDashBoard");
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:

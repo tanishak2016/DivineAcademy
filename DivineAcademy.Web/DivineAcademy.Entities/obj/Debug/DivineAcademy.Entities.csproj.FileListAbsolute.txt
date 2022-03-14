@@ -9,7 +9,6 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Debug\EntityFramew
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Debug\EntityFramework.SqlServer.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\obj\Debug\DivineAcademy.Entities.csproj.AssemblyReference.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\obj\Debug\DivineAcademy.Entities.csproj.CoreCompileInputs.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\obj\Debug\DivineAcademy.Entities.csproj.CopyComplete
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Entities\obj\Debug\DivineAcademy.Entities.dll

@@ -1,0 +1,6 @@
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Helper\bin\Debug\DivineAcademy.Helper.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Helper\bin\Debug\DivineAcademy.Helper.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Helper\obj\Debug\DivineAcademy.Helper.csproj.AssemblyReference.cache
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Helper\obj\Debug\DivineAcademy.Helper.csproj.CoreCompileInputs.cache
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Helper\obj\Debug\DivineAcademy.Helper.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Helper\obj\Debug\DivineAcademy.Helper.pdb
