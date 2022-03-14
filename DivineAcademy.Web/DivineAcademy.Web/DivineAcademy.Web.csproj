@@ -218,6 +218,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="MailTemplate\AccountConfirmation.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\css\fonts\customicon\Icons.eot" />
@@ -330,6 +331,10 @@
     <ProjectReference Include="..\DivineAcademy.Entities\DivineAcademy.Entities.csproj">
       <Project>{38ac896d-6b1e-4023-bc3a-83d87af70677}</Project>
       <Name>DivineAcademy.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DivineAcademy.Helper\DivineAcademy.Helper.csproj">
+      <Project>{fdb8234a-3686-44ec-8729-551b8cc627eb}</Project>
+      <Name>DivineAcademy.Helper</Name>
     </ProjectReference>
     <ProjectReference Include="..\DivineAcademy.Model\DivineAcademy.Model.csproj">
       <Project>{63ed22ba-1e37-4254-8bd0-ca12d3c074dc}</Project>

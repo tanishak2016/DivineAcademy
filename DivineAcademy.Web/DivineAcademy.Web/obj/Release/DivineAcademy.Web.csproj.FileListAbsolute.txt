@@ -115,3 +115,5 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\obj\Release\DivineAcademy.W
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\obj\Release\DivineAcademy.Web.csproj.CopyComplete
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\obj\Release\DivineAcademy.Web.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\obj\Release\DivineAcademy.Web.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Helper.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Helper.pdb

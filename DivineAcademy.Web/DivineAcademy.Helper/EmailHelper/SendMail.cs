@@ -21,7 +21,7 @@ namespace DivineAcademy.Helper.EmailHelper
                 String Password = ConfigurationManager.AppSettings["Password"].ToString();
                 String Port = ConfigurationManager.AppSettings["Port"].ToString();
                 MailMessage mailMessage = new MailMessage();
-                mailMessage.From = new MailAddress(FromEmailID);
+                mailMessage.From = new MailAddress(FromEmailID,"Divine Academy");
                 mailMessage.Subject = Subject;
                 mailMessage.Body = Message;
                 mailMessage.IsBodyHtml = isBodyHtml;
@@ -41,6 +41,7 @@ namespace DivineAcademy.Helper.EmailHelper
             }
             catch(Exception ex)
             {
+              string error=   ex.ToString();
                 return status;
             }
             

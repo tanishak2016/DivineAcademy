@@ -10,6 +10,10 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using DivineAcademy.Web.Areas.Student.Models;
 using DivineAcademy.Entities.StudentEntities;
+using DivineAcademy.DataBase.Context;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System.IO;
+using DivineAcademy.Helper.EmailHelper;
 
 namespace DivineAcademy.Web.Areas.Student.Controllers
 {
@@ -74,6 +78,16 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
                 return View(model);
             }
 
+            var user = await UserManager.FindByEmailAsync(model.Email);
+            if(user!=null)
+            {
+                if(!await UserManager.IsEmailConfirmedAsync(user.Id))
+                {
+                    ModelState.AddModelError("", "You must have a confirmed email to log on.");
+                    return View();
+                }
+            }          
+            
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
@@ -162,11 +176,35 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
                     DateCeated = DateTime.Now.ToString("dddd,dd MMMM yyyy hh:mm tt")
                     
                 };
+                DivineDBContext divineDB = new DivineDBContext();
+                var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(divineDB));
+                if (!roleManager.RoleExists("Student"))
+                {
+                    var role = new Microsoft.AspNet.Identity.EntityFramework.IdentityRole();
+                    role.Name = "Student";
+                    roleManager.Create(role);
+                }
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                    var result1 = UserManager.AddToRole(user.Id, "Student");
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
+                    String code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                    var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
 
+                    String body = string.Empty;
+                    using(StreamReader reader=new StreamReader(Server.MapPath("~/MailTemplate/AccountConfirmation.html")))
+                    {
+                        body = reader.ReadToEnd();
+                    }
+                    body = body.Replace("{ConfirmationLink}", callbackUrl);
+                    body = body.Replace("{UserName}", model.Email);
+                    body = body.Replace("{Password}", model.Password);
+                    bool IsSendEmail = SendMail.EmailSend(model.Email,"Divine Academy : Confirm Your Account Now",body,true);
+                    if(IsSendEmail)
+                    {
+                        return RedirectToAction("Login","Account");
+                    }
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
@@ -181,7 +219,9 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
             }
 
             // If we got this far, something failed, redisplay form
-            return View(model);
+            // return View(model);
+            return RedirectToAction("Login", "Account");
+
         }
 
         //
