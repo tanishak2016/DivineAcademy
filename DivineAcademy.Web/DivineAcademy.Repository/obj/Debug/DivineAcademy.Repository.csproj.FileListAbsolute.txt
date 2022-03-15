@@ -8,7 +8,6 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\DivineAcad
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\DivineAcademy.Model.dll.config
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\EntityFramework.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\bin\Debug\EntityFramework.SqlServer.xml
-G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\obj\Debug\DivineAcademy.Repository.csproj.AssemblyReference.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\obj\Debug\DivineAcademy.Repository.csproj.CoreCompileInputs.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\obj\Debug\DivineAcademy.Repository.csproj.CopyComplete
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Repository\obj\Debug\DivineAcademy.Repository.dll

@@ -177,6 +177,7 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
                     
                 };
                 DivineDBContext divineDB = new DivineDBContext();
+                
                 var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(divineDB));
                 if (!roleManager.RoleExists("Student"))
                 {
@@ -212,15 +213,15 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
 
-                    ModelState.Clear();
+                  //  ModelState.Clear();
                     // return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
             }
 
             // If we got this far, something failed, redisplay form
-            // return View(model);
-            return RedirectToAction("Login", "Account");
+             return View(model);
+           // return RedirectToAction("Login", "Account");
 
         }
 
