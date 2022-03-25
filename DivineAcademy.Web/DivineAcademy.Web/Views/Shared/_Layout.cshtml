@@ -53,20 +53,22 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="@Url.Action("Index","Home")">Home</a></li>
                             @*<li class="dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Our Institute</a></li>
-                                    <li><a href="#">Our Team</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Investors</a></li>
-                                </ul>
-                            </li>*@
-                             <li><a href="#">Services</a></li>
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Our Institute</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Investors</a></li>
+            </ul>
+        </li>*@
+                            <li><a href="#">Services</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Gallary</a></li>
                             <li><a href="#">Contact Us</a></li>
                             @*<li><a href="contact.html">Contact</a></li>*@
                             @Html.Partial("_LoginPartial")
+                            @*<li><a href="@Url.Action("AdminLogin","Admin",new { Area="Admin"})">Admin Login</a></li>*@
+
 
 
                             @*<li class="dropdown">

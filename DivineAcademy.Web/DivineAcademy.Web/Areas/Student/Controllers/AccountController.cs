@@ -78,12 +78,12 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
                 return View(model);
             }
 
-            var user = await UserManager.FindByEmailAsync(model.Email);
+            var user = await UserManager.FindByEmailAsync(model.Email);            
             if(user!=null)
             {
                 if(!await UserManager.IsEmailConfirmedAsync(user.Id))
                 {
-                    ModelState.AddModelError("", "You must have a confirmed email to log on.");
+                    ModelState.AddModelError("", "Activate Your Account First...");
                     return View();
                 }
             }          
@@ -153,8 +153,10 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
         //
         // GET: /Account/Register
         [AllowAnonymous]
-        public ActionResult Register()
+        public ActionResult Register(bool isSuccess=false)
         {
+
+            ViewBag.IsSuccess = isSuccess;
             return View();
         }
 
@@ -173,6 +175,7 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
                     FullName = model.FullName,
                     Address = model.Address,
                     PhoneNumber = model.PhoneNumber,
+                    Gender = model.Gender,
                     DateCeated = DateTime.Now.ToString("dddd,dd MMMM yyyy hh:mm tt")
                     
                 };
@@ -194,18 +197,24 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
 
                     String body = string.Empty;
-                    using(StreamReader reader=new StreamReader(Server.MapPath("~/MailTemplate/AccountConfirmation.html")))
+                    using (StreamReader reader = new StreamReader(Server.MapPath("~/MailTemplate/AccountConfirmation.html")))
                     {
                         body = reader.ReadToEnd();
                     }
                     body = body.Replace("{ConfirmationLink}", callbackUrl);
                     body = body.Replace("{UserName}", model.Email);
                     body = body.Replace("{Password}", model.Password);
-                    bool IsSendEmail = SendMail.EmailSend(model.Email,"Divine Academy : Confirm Your Account Now",body,true);
-                    if(IsSendEmail)
+                    bool IsSendEmail = SendMail.EmailSend(model.Email, "Divine Academy : Confirm Your Account Now", body, true);
+
+                    if (IsSendEmail)
                     {
-                        return RedirectToAction("Login","Account");
+                        TempData["msg"] = user.FullName + "---" + "Congratulations !  Account has been created successfully. We have sent a confirmation email to your email id. Please Activate your account.";
+                        return RedirectToAction("Register", "Account");
+
+
                     }
+
+
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
@@ -213,7 +222,7 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
 
-                  //  ModelState.Clear();
+                    //  ModelState.Clear();
                     // return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
@@ -255,7 +264,7 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await UserManager.FindByNameAsync(model.Email);
+                var user = await UserManager.FindByEmailAsync(model.Email);
                 if (user == null || !(await UserManager.IsEmailConfirmedAsync(user.Id)))
                 {
                     // Don't reveal that the user does not exist or is not confirmed
@@ -264,10 +273,17 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
 
                 // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                 // Send an email with this link
-                // string code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
-                // var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);		
+                 string code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);                
+                 var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);		
                 // await UserManager.SendEmailAsync(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>");
-                // return RedirectToAction("ForgotPasswordConfirmation", "Account");
+
+                bool IsSendEmail = SendMail.EmailSend(model.Email, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>", true);
+                if(IsSendEmail)
+                {
+                    return RedirectToAction("ForgotPasswordConfirmation", "Account");
+
+                }
+
             }
 
             // If we got this far, something failed, redisplay form
@@ -301,7 +317,7 @@ namespace DivineAcademy.Web.Areas.Student.Controllers
             {
                 return View(model);
             }
-            var user = await UserManager.FindByNameAsync(model.Email);
+            var user = await UserManager.FindByEmailAsync(model.Email);
             if (user == null)
             {
                 // Don't reveal that the user does not exist

@@ -1,0 +1,142 @@
+﻿@*@model DivineAcademy.Entities.StudentEntities.CourseCategory*@
+@model DivineAcademy.Model.ViewModels.CourseCategoryViewModel
+@{
+    ViewBag.Title = "SaveCourseCategory";
+    Layout = "~/Areas/Student/Views/Shared/_AdminDashboard.cshtml";
+
+}
+
+
+
+<section style="background-color: #eee;">
+    <div class="container py-2">
+        <div class="row" style="text-align:center">
+            <div class="col">
+                <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                    <strong>Update Course Category </strong>
+                    @*<ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#">User Profile</a></li>
+                            <li class="breadcrumb-item"><a href="#">User</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                        </ol>*@
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        @*<img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">*@
+
+                        <img src="~/Content/img/divine-logo.jpg" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;height:137px">
+
+
+                        <hr style="height:2px;position:relative;border:none;color:green" />
+
+
+                        <h5 class="my-3">Course Categories</h5>
+                        @*<div class="d-flex justify-content-center mb-2">
+                            </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <form method="post">
+
+                            <div class="row" style="display:none">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Category ID</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input type="text" name="ID"
+                                           class="form-control" placeholder="Category ID" value="@Model.ID" />
+
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Category Name</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    @*<select name="Name" required="required" class="form-control">
+                                    @foreach (var category in Model.AvailableCourseCategories)
+                                    {
+                                    var selected = category.ID == Model.ID ? "selected" : string.Empty;
+                                    <option value="@category.Name" selected>@category.Name</option>
+                                    }
+                                    </select>*@
+                                    <select name="Name" required="required" class="form-control">
+                                        <option value="">Select Course Category</option>
+                                        <option value="Computer ">Computer</option>
+                                        <option value="Tution 1st to 12th">Tution 1st to 12th</option>
+                                        <option value="HSSC">HSSC</option>
+                                        <option value="SSC">SSC</option>
+                                        <option value="BANKING">BANKING</option>
+                                        <option value="NDA">NDA</option>
+                                        <option value="CDS">CDS</option>
+                                        <option value="RAILWAY">RAILWAY</option>
+                                        <option value="UPSC">UPSC</option>
+                                        <option value="NTT">NTT</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Category Description</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input type="text" name="Description" class="form-control"
+                                           placeholder="Category Description" value="@Model.Description" />
+
+                                </div>
+                            </div>
+                            <hr>
+
+                            <br />
+
+
+                            <div class="d-flex justify-content-center mb-2">
+                                <button type="submit" class="btn btn-primary ms-1">Update</button>|
+
+
+
+                                @*<a href="@Url.Action("UpdateCourseCategory","Course",new { id=Model.ID}) " class="btn btn-primary ms-1">Update</a>|*@
+
+                                <a href="@Url.Action("DisplayCourseCategory","Course")"
+                                   class="btn btn-danger">Cancel</a>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="~/Scripts/sweet-alert-min.js"></script>
+<link href="~/Content/sweetalert/sweet-alert.css" rel="stylesheet" />
+
+
+@if (TempData["msg"] != null)
+{
+    <script type="text/javascript">
+    swal({
+         title: "Message",
+         text: "@TempData["msg"]",
+         type: "success"
+    });
+
+
+    </script>
+}

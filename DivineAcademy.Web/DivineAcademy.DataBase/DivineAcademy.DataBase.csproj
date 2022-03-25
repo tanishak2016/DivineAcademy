@@ -62,6 +62,18 @@
     <Compile Include="Migrations\202203120858589_Initial.designer.cs">
       <DependentUpon>202203120858589_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203160426283_StudentGender.cs" />
+    <Compile Include="Migrations\202203160426283_StudentGender.designer.cs">
+      <DependentUpon>202203160426283_StudentGender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203211206233_CourseName_Category.cs" />
+    <Compile Include="Migrations\202203211206233_CourseName_Category.designer.cs">
+      <DependentUpon>202203211206233_CourseName_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203241633445_course_categorychange.cs" />
+    <Compile Include="Migrations\202203241633445_course_categorychange.designer.cs">
+      <DependentUpon>202203241633445_course_categorychange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +90,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202203120858589_Initial.resx">
       <DependentUpon>202203120858589_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203160426283_StudentGender.resx">
+      <DependentUpon>202203160426283_StudentGender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203211206233_CourseName_Category.resx">
+      <DependentUpon>202203211206233_CourseName_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203241633445_course_categorychange.resx">
+      <DependentUpon>202203241633445_course_categorychange.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

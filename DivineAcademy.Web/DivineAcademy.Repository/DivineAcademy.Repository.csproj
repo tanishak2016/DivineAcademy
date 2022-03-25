@@ -40,6 +40,12 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -51,11 +57,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GenericRepository\AllRepository.cs" />
-    <Compile Include="GenericRepository\_IAllRepository.cs" />
+    <Compile Include="GenericRepository\GenericRepository.cs" />
+    <Compile Include="GenericRepository\_IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DivineAcademy.DataBase\DivineAcademy.DataBase.csproj">
+      <Project>{54ac313a-87d5-420f-b9cc-f34e4afb02db}</Project>
+      <Name>DivineAcademy.DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DivineAcademy.Entities\DivineAcademy.Entities.csproj">
+      <Project>{38ac896d-6b1e-4023-bc3a-83d87af70677}</Project>
+      <Name>DivineAcademy.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DivineAcademy.Model\DivineAcademy.Model.csproj">
       <Project>{63ed22ba-1e37-4254-8bd0-ca12d3c074dc}</Project>
       <Name>DivineAcademy.Model</Name>

@@ -11,7 +11,7 @@ using DivineAcademy.Web.Areas.Student.Models;
 namespace DivineAcademy.Web.Areas.Student.Controllers
 {
     [Authorize]
-    public class ManageController : Controller
+    public class ManageController : ApplicationBaseController
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;

@@ -1,0 +1,131 @@
+﻿@model DivineAcademy.Model.ViewModels.CourseNameViewModel
+@{
+    ViewBag.Title = "Save Course";
+    Layout = "~/Areas/Student/Views/Shared/_StudentDashboard.cshtml";
+
+}
+
+
+@if (Request.IsAuthenticated)
+{
+
+    <section style="background-color: #eee;">
+        <div class="container py-2">
+            <div class="row" style="text-align:center">
+                <div class="col">
+                    <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                        <strong>Save Course</strong>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            @*<img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">*@
+
+                            <img src="~/Content/img/divine-logo.jpg" alt="avatar" 
+                            class="rounded-circle img-fluid" style="width: 150px;height:137px">
+
+                            <hr style="height:2px;position:relative;border:none;color:green" />
+                            <h5 class="my-3">Course Names</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <form method="post">
+
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Category Name</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <select name="CourseCategoryID" required="required" class="form-control">
+                                            @foreach (var courseCategory in Model.AvailableCourseCategories)
+                                            {
+                                                <option value="@courseCategory.ID">@courseCategory.Name</option>
+
+                                            }
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Course Name</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="Name" class="form-control"
+                                               placeholder="Course Name" />
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Course Price</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="Price" class="form-control"
+                                               placeholder="Enter Price" />
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Course Description</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="Description" class="form-control"
+                                               placeholder="Course Description" />
+                                    </div>
+                                </div>
+                                <hr>
+
+
+
+                                <br />
+                                <div class="d-flex justify-content-center mb-2">
+                                    <button type="submit" class="btn btn-primary ms-1">Save</button>|
+                                    <a href="@Url.Action("DisplayCourseCategory","Course")"
+                                       class="btn btn-danger">Cancel</a>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+}
+
+<script src="~/Scripts/sweet-alert-min.js"></script>
+<link href="~/Content/sweetalert/sweet-alert.css" rel="stylesheet" />
+
+
+@if (TempData["msg"] != null)
+{
+    <script type="text/javascript">
+    swal({
+         title: "Message",
+         text: "@TempData["msg"]",
+         type: "success"
+    });
+
+
+    </script>
+}
+
+
+
+
+

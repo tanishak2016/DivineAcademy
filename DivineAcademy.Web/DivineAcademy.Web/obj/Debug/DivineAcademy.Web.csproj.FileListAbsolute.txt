@@ -55,6 +55,7 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.DataBase.
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Entities.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Helper.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Model.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Service.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\EntityFramework.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\EntityFramework.SqlServer.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\Microsoft.AspNet.Identity.Core.dll
@@ -81,13 +82,17 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\System.Web.WebPages.Dep
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\System.Web.WebPages.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\System.Web.WebPages.Razor.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\WebGrease.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Repository.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.DataBase.pdb
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.DataBase.dll.config
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Entities.pdb
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Entities.dll.config
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Helper.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Helper.dll.config
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Model.pdb
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Model.dll.config
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Service.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Service.dll.config
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\EntityFramework.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\EntityFramework.SqlServer.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\Microsoft.AspNet.Identity.Core.xml
@@ -112,6 +117,8 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\Microsoft.Owin.Security
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\Microsoft.Owin.Security.OAuth.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Repository.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Repository.dll.config
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\obj\Debug\DivineAcademy.Web.csproj.AssemblyReference.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\obj\Debug\DivineAcademy.Web.csproj.CoreCompileInputs.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\obj\Debug\DivineAcademy.Web.csproj.CopyComplete

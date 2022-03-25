@@ -1,0 +1,150 @@
+﻿@model DivineAcademy.Web.Areas.Student.Models.EditUserViewModel
+
+@{
+    ViewBag.Title = "EditUser";
+    Layout = "~/Areas/Student/Views/Shared/_StudentDashboard.cshtml";
+
+}
+
+
+@if (Request.IsAuthenticated && ViewData.ContainsKey("FullName"))
+{
+
+    <section style="background-color: #eee;">
+        <div class="container py-2">
+                <div class="row" style="text-align:center">
+                    <div class="col">
+                        <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                            <strong>Update Student Profile </strong>
+                            @*<ol class="breadcrumb mb-0">
+                                    <li class="breadcrumb-item"><a href="#">User Profile</a></li>
+                                    <li class="breadcrumb-item"><a href="#">User</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                                </ol>*@
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mb-4">
+                            <div class="card-body text-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+
+                                <hr style="height:8px;position:relative;border:none;color:green" />
+                                <br /><br /><br /><br /><br /><br /><br /><br />
+
+                                <h5 class="my-3">@ViewData["FullName"]</h5>
+                                @*<p class="text-muted mb-1">Full Stack Developer</p>
+        <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>*@
+                                <div class="d-flex justify-content-center mb-2">
+                                    @*<button type="button" asp-action="EditUser" asp-controller="StudentDashBoard" asp-route-id="@ViewData["userID"]" class="btn btn-primary">Edit Profie</button>*@
+
+                                    @*<a href="@Url.Action("EditUser","StudentDashBoard",new { id= @ViewData["userID"]})"
+               class="btn btn-primary ">Edit</a>
+
+            <button type="button" class="btn btn-outline-primary ms-1">Settings</button>*@
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <form method="post">
+
+                                    <div class="row" style="display:none">
+                                        <div class="col-sm-3">
+                                            <p class="mb-0">ID</p>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="ID" class="form-control" disabled
+                                                   placeholder="Category ID" value="@Model.ID" />
+                                        </div>
+                                    </div>
+                                    @*<hr />*@
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <p class="mb-0">Full Name</p>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="FullName" class="form-control" placeholder="Category ID" value="@Model.FullName" />
+
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <p class="mb-0">Email</p>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="Email" class="form-control"
+                                                   placeholder="Category ID" value="@Model.Email" />
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <p class="mb-0">Phone</p>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="PhoneNumber" class="form-control"
+                                                   placeholder="Category ID" value="@Model.PhoneNumber" />
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <p class="mb-0">Address</p>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="Address" class="form-control"
+                                                   placeholder="Category ID" value="@Model.Address" />
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <p class="mb-0">Gender</p>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="Gender" class="form-control"
+                                                   plac eholder="Category ID" value="@Model.Gender" />
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <p class="mb-0">User Name</p>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="UserName" class="form-control"
+                                                   placeholder="UserName" value="@Model.UserName" />
+                                        </div>
+                                    </div>
+                                    <br />                                 
+
+
+                                    <div class="d-flex justify-content-center mb-2">
+
+                                    <button type="submit" class="btn btn-primary ms-1">Update</button>
+                                        <a href="@Url.Action("Index","StudentDashBoard")"
+                                           class="btn btn-danger">Cancel</a>
+                                    </div>
+                                </form>
+
+                            </div>
+                        
+                        </div>
+                </div>
+           </div>
+            </div>
+    </section>
+
+}
+
+
+

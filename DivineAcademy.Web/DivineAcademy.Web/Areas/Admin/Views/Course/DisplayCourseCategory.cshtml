@@ -1,0 +1,99 @@
+﻿@model  IEnumerable<DivineAcademy.Entities.StudentEntities.CourseCategory>
+@{
+    ViewBag.Title = "Course Category";
+    Layout = "~/Areas/Student/Views/Shared/_StudentDashboard.cshtml";
+
+}
+
+
+<section style="background-color: #eee;">
+
+    <div class="container py-2">
+        <div class="row">
+
+            <div class="row" style="text-align:center">
+                <div class="col">
+                    <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                        <strong> Course Categories</strong>
+
+                    </nav>
+                </div>
+            </div>
+
+            <div class="card shadow mb-4" style="width:100%">
+
+
+                <div class="card-body">
+                    <div class="table-responsive" style="width:100%">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr style="text-align:center">
+                                    @*<th >Contributor ID</th>*@
+                                    <th>Course Category Name</th>
+                                    <th>Course Category Description</th>
+                                    <th>Action</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model !=null && Model.Count() !=0)
+                                {
+
+
+                                    foreach (var courseCategory in Model)
+                                    {
+
+                                        <tr class="active" style="text-align:center">
+                                            <td style="font-weight:bolder">@courseCategory.Name</td>
+                                            <td style="font-weight:bolder">@courseCategory.Description</td>
+
+                                            <td>
+                                                <a href="UpdateCourseCategory?id=@courseCategory.ID" class="btn btn-sm btn-primary rounded-0">Edit</a>
+                                                <a href="DeleteCourseCategory?id=@courseCategory.ID" class="btn btn-sm btn-danger rounded-0" onclick="return confirm('Are You Sure You Wish To Delete This Record ');">Delete</a>
+                                            </td>
+                                        </tr>
+
+                                    }
+
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td style="font-weight:bolder;text-align:center;color:red">Sorrry! No Course Category Exist..</td>
+                                   
+                                    <td style="font-weight:bolder;text-align:center">
+                                        <a href="@Url.Action("SaveCourseCategory","Course")" class="btn btn-primary">Add New Category</a>
+                                    </td>
+                                    </tr>
+                                }
+
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<script src="~/Scripts/sweet-alert-min.js"></script>
+<link href="~/Content/sweetalert/sweet-alert.css" rel="stylesheet" />
+
+
+@{
+    if (TempData["msg"] != null)
+    {
+        <script type="text/javascript">
+    swal({
+         title: "Message",
+         text: "@TempData["msg"]",
+         type: "success"
+    });
+
+
+        </script>
+    }
+}

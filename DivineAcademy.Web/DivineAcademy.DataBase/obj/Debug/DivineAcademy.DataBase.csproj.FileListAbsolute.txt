@@ -14,6 +14,9 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\bin\Debug\Microsoft.As
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.csproj.AssemblyReference.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.Migrations.Initial.resources
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.Migrations.StudentGender.resources
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.Migrations.CourseName_Category.resources
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.Migrations.course_categorychange.resources
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.csproj.GenerateResource.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.csproj.CoreCompileInputs.cache
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Debug\DivineAcademy.DataBase.csproj.CopyComplete

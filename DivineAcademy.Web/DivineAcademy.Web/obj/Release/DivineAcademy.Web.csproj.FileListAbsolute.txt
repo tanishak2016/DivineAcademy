@@ -117,3 +117,10 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\obj\Release\DivineAcademy.W
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\obj\Release\DivineAcademy.Web.pdb
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Helper.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Helper.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Helper.dll.config
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Service.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Repository.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Service.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Service.dll.config
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Repository.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Web\bin\DivineAcademy.Repository.dll.config

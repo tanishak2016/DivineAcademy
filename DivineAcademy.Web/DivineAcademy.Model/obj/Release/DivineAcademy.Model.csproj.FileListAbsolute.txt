@@ -10,3 +10,10 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\obj\Release\DivineAcademy
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\obj\Release\DivineAcademy.Model.csproj.CopyComplete
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\obj\Release\DivineAcademy.Model.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\obj\Release\DivineAcademy.Model.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Release\DivineAcademy.Entities.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Release\Microsoft.AspNet.Identity.Core.dll
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Release\DivineAcademy.Entities.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Release\DivineAcademy.Entities.dll.config
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.Model\bin\Release\Microsoft.AspNet.Identity.Core.xml

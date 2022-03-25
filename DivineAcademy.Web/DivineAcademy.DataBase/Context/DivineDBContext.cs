@@ -20,5 +20,8 @@ namespace DivineAcademy.DataBase.Context
             return new DivineDBContext();
       }
 
+        public DbSet<CourseName> CourseNames { get; set; }
+        public DbSet<CourseCategory> CourseCategories { get; set; }
+
     }
 }

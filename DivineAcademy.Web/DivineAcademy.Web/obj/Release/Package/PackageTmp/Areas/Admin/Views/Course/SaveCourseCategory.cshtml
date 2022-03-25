@@ -1,0 +1,117 @@
+﻿@model DivineAcademy.Entities.StudentEntities.CourseCategory
+@{
+    ViewBag.Title = "SaveCourseCategory";
+    Layout = "~/Areas/Student/Views/Shared/_StudentDashboard.cshtml";
+
+}
+
+
+@if (Request.IsAuthenticated)
+{
+
+    <section style="background-color: #eee;">
+        <div class="container py-2">
+            <div class="row" style="text-align:center">
+                <div class="col">
+                    <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                        <strong>Save Course Category </strong>                       
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            @*<img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">*@
+
+                            <img src="~/Content/img/divine-logo.jpg" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;height:137px">
+
+
+                            <hr style="height:2px;position:relative;border:none;color:green" />
+
+
+                            <h5 class="my-3">Course Categories</h5>                           
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <form method="post">
+
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Category Name</p>
+                                    </div>
+                                    <div class="col-sm-9">                                        
+                                        <select name="Name" required="required" class="form-control">
+                                            <option value="">Select Course Category</option>
+                                            <option value="Computer ">Computer</option>
+                                            <option value="Tution 1st to 12th">Tution 1st to 12th</option>
+                                            <option value="HSSC">HSSC</option>
+                                            <option value="SSC">SSC</option>
+                                            <option value="BANKING">BANKING</option>
+                                            <option value="NDA">NDA</option>
+                                            <option value="CDS">CDS</option>
+                                            <option value="RAILWAY">RAILWAY</option>
+                                            <option value="UPSC">UPSC</option>
+                                            <option value="NTT">NTT</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Category Description</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="Description" class="form-control" required
+                                               placeholder="Category Description" />
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <br />
+
+
+                                <div class="d-flex justify-content-center mb-2">
+
+                                    <button type="submit" class="btn btn-primary ms-1">Save</button>|
+                                    <a href="@Url.Action("DisplayCourseCategory","Course")"
+                                       class="btn btn-danger">Cancel</a>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+}
+
+<script src="~/Scripts/sweet-alert-min.js"></script>
+<link href="~/Content/sweetalert/sweet-alert.css" rel="stylesheet" />
+
+
+@if (TempData["msg"] != null)
+{
+<script type="text/javascript">
+    swal({
+         title: "Message",
+         text: "@TempData["msg"]",
+         type: "success"
+    });
+
+
+</script>
+}
+
+
+
+
+

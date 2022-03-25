@@ -19,3 +19,6 @@ G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Release\DivineAcad
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Release\DivineAcademy.DataBase.csproj.CopyComplete
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Release\DivineAcademy.DataBase.dll
 G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Release\DivineAcademy.DataBase.pdb
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Release\DivineAcademy.DataBase.Migrations.StudentGender.resources
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Release\DivineAcademy.DataBase.Migrations.CourseName_Category.resources
+G:\DivineAcademy\DivineAcademy.Web\DivineAcademy.DataBase\obj\Release\DivineAcademy.DataBase.Migrations.course_categorychange.resources
