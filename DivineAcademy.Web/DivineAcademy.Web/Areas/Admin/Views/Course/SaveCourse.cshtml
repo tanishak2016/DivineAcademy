@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "Save Course";
     Layout = "~/Areas/Student/Views/Shared/_StudentDashboard.cshtml";
+    var imageURL = "/Content/img/placeholder-image.png";
 
 }
 
@@ -23,13 +24,20 @@
                 <div class="col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body text-center">
-                            @*<img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">*@
+                            @*<img src="~/Content/img/divine-logo.jpg" alt="avatar"
+        class="rounded-circle img-fluid" style="width: 150px;height:137px">*@
 
-                            <img src="~/Content/img/divine-logo.jpg" alt="avatar" 
-                            class="rounded-circle img-fluid" style="width: 150px;height:137px">
 
+                            <img id="uploadedImagePreview" height="213" width="492"  
+                                 class="img-thumbnail img-fluid" src="@imageURL" />
+
+                            <div class="form-group">
+                                <ul id="imageUploadList">                                   
+                                </ul>
+                            </div>
                             <hr style="height:2px;position:relative;border:none;color:green" />
-                            <h5 class="my-3">Course Names</h5>
+
+                            <h5 class="my-3">Save Course Names</h5>
                         </div>
                     </div>
 
@@ -61,7 +69,7 @@
                                     </div>
                                     <div class="col-sm-9">
                                         <input type="text" name="Name" class="form-control"
-                                               placeholder="Course Name" />
+                                             required="required"  placeholder="Course Name" />
                                     </div>
                                 </div>
                                 <hr>
@@ -72,7 +80,7 @@
                                     </div>
                                     <div class="col-sm-9">
                                         <input type="text" name="Price" class="form-control"
-                                               placeholder="Enter Price" />
+                                             required="required"  placeholder="Enter Price" />
                                     </div>
                                 </div>
                                 <hr>
@@ -83,14 +91,26 @@
                                     </div>
                                     <div class="col-sm-9">
                                         <input type="text" name="Description" class="form-control"
-                                               placeholder="Course Description" />
+                                            required="required"   placeholder="Course Description" />
                                     </div>
                                 </div>
                                 <hr>
 
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Image Upload</p>
+                                    </div>
+                                    <div class="col-sm-9">
 
+                                        <div class="custom-file">
+                                            <input id="ImageURL" name="ImageURL" class="form-control" type="hidden"  />
+                                            <input type="file" name="files" class="custom-file-input" id="categoryImg" required  multiple accept="image/png, image/jpeg, image/gif, image/jpg">
+                                        </div>
 
-                                <br />
+                                    </div>
+                                </div>
+                                <hr>
+                                
                                 <div class="d-flex justify-content-center mb-2">
                                     <button type="submit" class="btn btn-primary ms-1">Save</button>|
                                     <a href="@Url.Action("DisplayCourseCategory","Course")"
@@ -107,9 +127,66 @@
     </section>
 
 }
-
+<script src="~/Scripts/jquery-3.4.1.js"></script>
 <script src="~/Scripts/sweet-alert-min.js"></script>
 <link href="~/Content/sweetalert/sweet-alert.css" rel="stylesheet" />
+
+
+
+<script>
+    $("#categoryImg").change(function () {
+        debugger;
+        $("#imageUploadList").empty();
+        var fp = $("#categoryImg");
+        var formData = new FormData();
+        var lg = fp[0].files.length; // get length
+        var items = fp[0].files;
+        var fragment = "";
+        debugger;
+        if (lg > 0) {
+            for (var i = 0; i < lg; i++) {
+                var fileName = items[i].name; // get file name
+                var fileSize = items[i].size; // get file size
+                var fileType = items[i].type; // get file type
+
+                // append li to UL tag to display File info
+                fragment += "<li style=color:#007bff>" + fileName + " (<b>" + fileSize + "</b> bytes) - Type :" + fileType + "</li>";
+                formData.append("files", $("#categoryImg")[0].files[0]);
+            }
+            $("#imageUploadList").append(fragment);
+        }
+        $.ajax({
+            type: 'POST',
+            url: '/Admin/Shared/UploadImage',
+            dataType: 'json',
+            data: formData,
+            contentType: false,
+            processData: false
+        })
+         .done(function (data) {
+            debugger;
+            console.log(data)            
+             if (data.Sucess) {
+                 debugger;
+                 $("#ImageURL").val(data.ImageURL)
+                    $("#uploadedImagePreview").attr('src', data.ImageURL);
+                    //("#uploadsuccess").show();
+                 $("#imageUploadList").append("<hr style=height: 2px; position: relative; border: none; color: green />");
+                    $("#imageUploadList").append("<label style=color:green>Images Uploaded Successfully On Server</label>");
+                }
+            }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("Failed");
+            });
+
+
+
+    });
+</script>
+
+
+
+
+
 
 
 @if (TempData["msg"] != null)

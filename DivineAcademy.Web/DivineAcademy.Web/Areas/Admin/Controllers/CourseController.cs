@@ -29,13 +29,7 @@ namespace DivineAcademy.Web.Areas.Admin.Controllers
         }
         [HttpPost]
         public ActionResult SaveCourse(CourseNameViewModel model)
-        {
-            //var courseModel = new CourseName();
-            //courseModel.Name = model.Name;
-            //courseModel.Description = model.Description;
-            //courseModel.Price = model.Price;
-            //courseModel.CourseCategoryID = model.CourseCategoryID;
-            //courseModel.ImageURL = model.ImageURL;
+        {          
 
             if (ModelState.IsValid)
             {

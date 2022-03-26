@@ -171,6 +171,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
     <Compile Include="Areas\Admin\Controllers\CourseController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SharedController.cs" />
     <Compile Include="Areas\Student\Controllers\ApplicationBaseController.cs" />
     <Compile Include="Areas\Student\Controllers\StudentDashBoardController.cs" />
     <Compile Include="Areas\Student\StudentAreaRegistration.cs" />
@@ -216,6 +217,7 @@
     <Content Include="Content\img\error-404-monochrome.svg" />
     <Content Include="Content\img\login.png" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\placeholder-image.png" />
     <Content Include="Content\img\signup.png" />
     <Content Include="Content\img\slides\1.jpg" />
     <Content Include="Content\img\slides\2.jpg" />
@@ -271,6 +273,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -344,6 +347,7 @@
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Student\Data\" />
     <Folder Include="Areas\Student\Views\ApplicationBase\" />
+    <Folder Include="Content\course-img\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
